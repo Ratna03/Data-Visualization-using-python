@@ -1,3 +1,24 @@
 Usage of data visualization:
 1.Data visualization is a way to show a complex data in a form that is graphical and easy to understand. 
-2.Plots and graphs can be very effective in conveying a clear description of the data especially when disclosing findings to     an audience or sharing the data with other peer data scientists.
+2.Plots and graphs can be very effective in conveying a clear description of the data especially when disclosing findings to an audience or sharing the data with other peer data scientists.
+
+MATPLOTLIB:
+Discovered by John Hunter.
+It has three layers:
+1. Backend Layer ---->>>> 
+   It has three built-in abstract interface classes: 
+    1. FigureCanvas (matplotlib.backend_bases.FigureCanvas)- It defines and encompasses the area on which the figure is drawn. 
+    2. Renderer (matplotlib.backend_bases.Renderer)- It knows how to draw on the figure canvas.
+    3. Event (matplotlib.backend_bases.event)- It handles user inputs such as keyboard strokes and mouse clicks. 
+    
+2. Artist Layer ---->>>>
+   composed of one main object, which is the Artist. The Artist is the object that knows how to take the Renderer and use it to put ink on the canvas.The title, the lines, the tick labels, the images, and so on, all correspond to an individual Artist.
+   There are 2 types of artist layer:
+   1. primitive -> such as a line, a rectangle, a circle, or text. 
+   2. composite -> such as the figure or the axes. 
+
+important to note that each composite artist may contain other composite artists as well as primitive artists.
+
+3. Scripting Layer ---->>>>
+   It is essentially the Matplotlib.pyplot interface, which automates the process of defining a canvas and defining a figure artist instance and connecting them. 
+
